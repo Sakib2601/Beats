@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:background="@drawable/homebg"
+    tools:context=".fragments.HomeFragment">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:theme="@style/SearchViewStyle"
+            app:queryBackground="@drawable/bg_white_rounded"
+            app:submitBackground="@drawable/bg_white_rounded"
+            android:layout_gravity="right"
+            app:searchIcon="@drawable/ic_search_24"
+            android:id="@+id/searchView"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSong"
+            android:fontFamily="@font/circular"
+            android:text="Songs"
+            android:padding="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/songsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:padding="4dp" />
+
+
+
+
+</FrameLayout>

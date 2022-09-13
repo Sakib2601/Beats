@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TrendingFragment"
+    android:background="@drawable/trending">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTrending"
+        android:fontFamily="@font/circular"
+        android:text="Trending"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:id="@+id/trendingRV"/>
+
+
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/favFrame"
+    tools:context=".fragments.FavouritesFragment"
+    android:background="@drawable/trending">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFavourites"
+        android:fontFamily="@font/circular"
+        android:text="Favourites"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favSongsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:padding="4dp" />
+</FrameLayout>

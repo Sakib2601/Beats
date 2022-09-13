@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1062946690700",
+    "firebase_url": "https://beats-d3fd5.firebaseio.com",
+    "project_id": "beats-d3fd5",
+    "storage_bucket": "beats-d3fd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062946690700:android:9e0d35e569fc9aa806cda9",
+        "android_client_info": {
+          "package_name": "com.sgp.beats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062946690700-trms0l7785c49u6viucp8nimvu0rhqq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXur5TG3n483CQYrfEZ_Qu45YAXT4emp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062946690700-trms0l7785c49u6viucp8nimvu0rhqq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

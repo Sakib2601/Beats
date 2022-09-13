@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:backgroundTint="@android:color/transparent"
+        >
+
+        <ImageView
+            android:id="@+id/imgCover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/songNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imgCover"
+            android:fontFamily="@font/circular"
+            android:text="Song"
+            android:textColor="#000"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txtArtist"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songNameTV"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imgCover"
+            android:text="Artist"
+            android:textColor="#000"
+            android:textSize="6pt" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/btnAddToFav"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_favorite_border_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

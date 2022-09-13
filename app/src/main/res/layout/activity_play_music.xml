@@ -1,0 +1,75 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/musicbackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/coverImg"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exo_player"
+            android:layout_width="0dp"
+            app:shutter_background_color="#000"
+            android:layout_height="0dp"
+            app:fastforward_increment="10000"
+            app:rewind_increment="10000"
+            app:auto_show="true"
+            app:surface_type="surface_view"
+            app:use_controller="true"
+            />
+
+        <com.google.android.exoplayer2.ui.PlayerControlView
+            android:id="@+id/controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:controller_layout_id="@layout/custom_exo_playback_control_view"
+            app:show_timeout="0" />
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:layout_below="@+id/coverImg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/circular"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:text="Song Name"
+            android:textColor="#F57F17"
+            />
+
+
+        <TextView
+            android:id="@+id/txtArtistName"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtSongName"
+            android:layout_above="@+id/controls"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Artist Name"
+            android:textColor="#F57F17"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
